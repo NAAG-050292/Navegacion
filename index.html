@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title> dropdown navigation</title>
+</head>
+<body>
+
+  <nav class="nav container">
+    <img src="./images/logo.svg" alt="logo" class="nav_img">
+
+    <div class="nav_hamburguer"></div>
+
+    <div class="nav_overlay">
+      <ul class="nav_menu">
+
+        <!-- Primer - Menu -->
+        <li class="nav_item">
+          <span class="nav_parent">Features
+            <img src="./images/icon-arrow-down.svg" alt="arrow" class="nav_arrow">
+          </span>
+
+          <!-- Primer SubMenu -->
+          <ul class="nav_inner">
+
+            <li class="nav_dropdown">
+              <a href="#" class="nav_link">
+                <img src="./images/icon-todo.svg" class="nav_ilustration" alt="todo">
+                Todo List
+              </a>
+            </li>
+
+            <li class="nav_dropdown">
+              <a href="#" class="nav_link">
+                <img src="./images/icon-calendar.svg" class="nav_ilustration" alt="calendar">
+                Calendar
+              </a>
+            </li>
+
+            <li class="nav_dropdown">
+              <a href="#" class="nav_link">
+                <img src="./images/icon-reminders.svg" class="nav_ilustration" alt="reminder">
+                Reminder
+              </a>
+            </li>
+
+            <li class="nav_dropdown">
+              <a href="#" class="nav_link">
+                <img src="./images/icon-planning.svg" class="nav_ilustration" alt="planning">
+                Planning
+              </a>
+            </li>
+          </ul>
+
+        </li>
+
+        <!-- Segundo - Menu-->
+        <li class="nav_item">
+          <span class="nav_parent">Company
+            <img src="./images/icon-arrow-down.svg" alt="arrow" class="nav_arrow">
+          </span>
+
+          <!-- Segundo SubMenu -->
+          <ul class="nav_inner">
+
+            <li class="nav_dropdown">
+              <a href="#" class="nav_link">History</a>
+            </li>
+
+            <li class="nav_dropdown">
+              <a href="#" class="nav_link">Our Team</a>
+            </li>
+
+            <li class="nav_dropdown">
+              <a href="#" class="nav_link">Blog</a>
+            </li>
+           </ul>
+
+        </li>
+
+        <li class="nav_item">
+          <a href="#" class="nav_link">Careers</a>
+        </li>
+        <li class="nav_item">
+          <a href="#" class="nav_link">About</a>
+        </li>
+
+        <li class="nav_login">
+          <a href="#" class="nav_sign">Login</a>
+        </li>
+        <li class="nav_login nav_login--border">
+          <a href="#" class="nav_sign">Register</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class="main_grid">
+
+      <picture class="main_picture">
+
+        <source srcset="./images/image-hero-desktop.png" class="main_img"
+        media="(min-width:768px)">
+
+        <img src="./images/image-hero-mobile.png" class="main_img">
+      </picture>
+
+    <article class="main_article">
+
+      <div class="main_texts">
+        <h1 class="main_title">Make remote work</h1>
+        <p class="main_paragraph">Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+          <a href="#" class="main_cta">Learn more</a>
+      </div>
+
+      <div class="main_brands">
+        <img src="./images/client-databiz.svg" alt="" class="main_brand">
+        <img src="./images/client-audiophile.svg" alt="" class="main_brand">
+        <img src="./images/client-meet.svg" alt="" class="main_brand">
+        <img src="./images/client-maker.svg" alt="" class="main_brand">
+      </div>
+
+    </section>
+    </article>
+  </main>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
